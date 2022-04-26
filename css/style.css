@@ -264,71 +264,6 @@ footer{
     background-size: cover;
 }
 
-/* 
-.staff h2{
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 35px;
-    text-align: center;
-    color: #FF7A87;
-    margin-bottom: 30px;
-    padding-top: 40px;
-}
-
-.persona1{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    background-color: #606CB5;
-    height: 300px;
-}
-
-.persona2{
-
-}
-
-
-.persona1 p{
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 20px;
-    text-align: center;
-    color: #FF7A87;
-    margin-right: 20px;
-    background-color: blue;
-    position: absolute;
-    left: 0;
-    width: 50%;
-}
-
-.imgPersona1{
-    height:300px;
-    width: 50%;
-    margin-left: 15px;
-    margin-right: 20px;
-    position: absolute;
-    right: 0;
-}
-
-.persona2{
-    margin-top: 60px;
-    margin-bottom: 80px;
-    display: flex;
-    align-items: center;
-}
-
-.persona2 p{
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 20px;
-    text-align: center;
-    color: #FF7A87;
-    margin-right: 20px;
-}
-
-.imgPersona2{
-    height:300px;
-    width: 50%;
-    margin-left: 15px;
-    margin-right: 20px;
-} */
-
 /*-------------------servicios----------------------*/
 
 .manicuria h2{
@@ -402,7 +337,6 @@ footer{
 /*-------------------galeria----------------------*/
 
 .galeriaGral{
-    /* background-color:  #FFA16B; */
     background-image: linear-gradient(to bottom,#606CB5, #B770B9, #F77AA4);
 }
 
