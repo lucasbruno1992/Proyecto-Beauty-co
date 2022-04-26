@@ -401,6 +401,11 @@ footer{
 
 /*-------------------galeria----------------------*/
 
+.galeriaGral{
+    /* background-color:  #FFA16B; */
+    background-image: linear-gradient(to bottom,#606CB5, #B770B9, #F77AA4);
+}
+
 .tituloGaleria{
     font-family: Copperplate, Papyrus, fantasy;
     font-size: 35px;
