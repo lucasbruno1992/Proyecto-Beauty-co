@@ -18,6 +18,7 @@ header{
     align-items: center;
     justify-content: space-evenly;
     padding-right: 10px;
+    z-index: 2;
 }
 
 .logo{
@@ -266,72 +267,38 @@ footer{
 
 /*-------------------servicios----------------------*/
 
-.manicuria h2{
+.tituloMaquillaje{
     font-family: Copperplate, Papyrus, fantasy;
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
     color: #FF7A87;
-    margin: 30px 0px 10px 0px;
+    margin-bottom: 20px;
+    padding-top: 40px;
 }
 
-.imgManicuria{
-    width: 50%;
-    height: 400px;
-    margin: 10px;
-}
-
-.imgManicuria1{
-    background-image: url(../imagenes/esculpidas.jpg);
-    background-repeat: no-repeat;
-}
-
-.imgManicuria2{
-    background-image: url(../imagenes/gelificadas.jpg);
-    background-repeat: no-repeat;
-}
-
-.imgManicuria3{
-    background-image: url(../imagenes/uñascondibujo.jpg);
-    background-repeat: no-repeat;
-
-}
-
-.maquillaje h2{
+.tituloManicuria{
     font-family: Copperplate, Papyrus, fantasy;
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
     color: #FF7A87;
-    margin: 30px 0px 10px 0px;
+    margin-bottom: 50px;
+    padding-top: 40px;
 }
 
-.imgMaquillaje{
-    width: 50%;
-    height: 400px;
-    margin: 10px;
-    background-color: #606CB5;
+.descripcionServicios{
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 25px;
+    text-align: center;
+    color: #FFC568;
+    margin-bottom: 50px;
+    padding-top: 100px;
+}
+
+.imgServicio{
+    text-align: center;
+    padding-bottom: 30px;
     object-fit: cover;
-}
-
-.imgMaquillaje1{
-    background-image: url(../imagenes/civil.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.imgMaquillaje2{
-    background-image: url(../imagenes/novia.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.imgMaquillaje3{
-    background-image: url(../imagenes/fiesta15.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-position: top;
+    
 }
 
 /*-------------------galeria----------------------*/
