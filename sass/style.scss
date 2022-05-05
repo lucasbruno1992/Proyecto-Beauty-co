@@ -143,6 +143,7 @@ footer{
 }
 
 .containerStaff {  
+    height: 900px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -151,7 +152,6 @@ footer{
     grid-template-areas:
         "persona1"
         "persona2";
-        height: 900px;
     }
 
 .persona1 {  
@@ -189,7 +189,7 @@ footer{
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas:
+    grid-template-areas: 
         "textoPersona2 imgPersona2";
     grid-area: persona2;
 }
