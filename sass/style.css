@@ -186,24 +186,25 @@ footer {
   gap: 0px 0px;
   grid-auto-flow: row;
       grid-template-areas: "imgPersona1 textoPersona1";
-  -ms-grid-rows: 1;
-  -ms-grid-columns: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: persona1;
 }
 
 .imgPersona1 {
-  -ms-grid-rows: 1;
-  -ms-grid-columns: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: imgPersona1;
   background-image: url(../imagenes/manicura.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 50px;
+  margin-left: 10px;
 }
 
 .textoPersona1 {
-  -ms-grid-rows: 1;
-  -ms-grid-columns: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: textoPersona1;
   font-family: Copperplate, Papyrus, fantasy;
   font-size: 20px;
@@ -225,14 +226,14 @@ footer {
   gap: 0px 0px;
   grid-auto-flow: row;
       grid-template-areas: "textoPersona2 imgPersona2";
-  -ms-grid-rows: 2;
-  -ms-grid-columns: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: persona2;
 }
 
 .textoPersona2 {
-  -ms-grid-rows: 1;
-  -ms-grid-columns: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: textoPersona2;
   font-family: Copperplate, Papyrus, fantasy;
   font-size: 20px;
@@ -245,13 +246,14 @@ footer {
 }
 
 .imgPersona2 {
-  -ms-grid-rows: 1;
-  -ms-grid-columns: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: imgPersona2;
   background-image: url(../imagenes/maquilladora.jpg);
   margin-bottom: 20px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-right: 10px;
 }
 
 /*-------------------servicios----------------------*/
