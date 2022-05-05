@@ -186,14 +186,14 @@ footer {
   gap: 0px 0px;
   grid-auto-flow: row;
       grid-template-areas: "imgPersona1 textoPersona1";
-      grid-row: 1;
-      grid-column: 1;
+  -ms-grid-rows: 1;
+  -ms-grid-columns: 1;
   grid-area: persona1;
 }
 
 .imgPersona1 {
-  grid-row: 1;
-  grid-column: 1;
+  -ms-grid-rows: 1;
+  -ms-grid-columns: 1;
   grid-area: imgPersona1;
   background-image: url(../imagenes/manicura.jpg);
   background-repeat: no-repeat;
@@ -202,8 +202,8 @@ footer {
 }
 
 .textoPersona1 {
-  grid-row: 1;
-  grid-column: 2;
+  -ms-grid-rows: 1;
+  -ms-grid-columns: 2;
   grid-area: textoPersona1;
   font-family: Copperplate, Papyrus, fantasy;
   font-size: 20px;
@@ -225,14 +225,14 @@ footer {
   gap: 0px 0px;
   grid-auto-flow: row;
       grid-template-areas: "textoPersona2 imgPersona2";
-  grid-row: 2;
-  grid-column: 1;
+  -ms-grid-rows: 2;
+  -ms-grid-columns: 1;
   grid-area: persona2;
 }
 
 .textoPersona2 {
-  grid-row: 1;
-  grid-column: 1;
+  -ms-grid-rows: 1;
+  -ms-grid-columns: 1;
   grid-area: textoPersona2;
   font-family: Copperplate, Papyrus, fantasy;
   font-size: 20px;
@@ -245,8 +245,8 @@ footer {
 }
 
 .imgPersona2 {
-  grid-row: 1;
-  grid-column: 2;
+  -ms-grid-rows: 1;
+  -ms-grid-columns: 2;
   grid-area: imgPersona2;
   background-image: url(../imagenes/maquilladora.jpg);
   margin-bottom: 20px;
