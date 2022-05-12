@@ -6,6 +6,17 @@
 }
 
 /*----------------------------barra de navegacion--------------------------*/
+@mixin imgServicio {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo{
+    font-size: 45px;
+    text-align: center;
+    color: #FF7A87;
+}
 
 .navbar{ 
     height: 80px;
@@ -28,7 +39,6 @@ footer{
     color: #F9F871;
     background: #606CB5;
     font-size: 25px;
-    font-family: Copperplate, Papyrus, fantasy;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
@@ -64,7 +74,7 @@ footer{
     height: 100vh;
     width: 100%;
     background-image: url(../imagenes/portada.jpg);
-    @include imgServicio;
+    @include imgServicio
 }
 
 .contenedor1{
@@ -82,17 +92,12 @@ footer{
     font-size: 40px;
 }
 
-@mixin imgServicio {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .imgServicio1{
     grid-column: 1/2;
     grid-row: 1/2;
     height: 300px;
     background-image: url(../imagenes/gelificadas.jpg);
-    @include imgSevicio;
+    @include imgServicio
 }
 
 .imgServicio2{
@@ -100,7 +105,7 @@ footer{
     grid-row: 1/2;
     height: 300px;
     background-image: url(../imagenes/civil.jpeg);
-    @include imgSevicio;
+    @include imgServicio
 } 
 
 .imgServicio3{
@@ -108,34 +113,28 @@ footer{
     grid-row: 1/2;
     height: 300px;
     background-image: url(../imagenes/uñascelestes.jpg);
-    @include imgSevicio;
+    @include imgServicio
 } 
 
 .contenedorMisTrabajos{
-    margin-top: 10px;
-    color: #FF7A87;
-    font-size: 35px;
-    font-family: Copperplate, Papyrus, fantasy;
+    margin-top: 40px;
     text-align: center;
 }
 
 .misTrabajos{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    @extend .titulo;
 }
 /*-------------------quienes somos----------------------*/
 
 .historia h2{
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 35px;
-    text-align: center;
-    color: #FF7A87;
+    @extend .titulo;
     margin-bottom: 20px;
-    padding-top: 40px;
+    padding-top: 100px;
 }
 
 .historia p{ 
     padding: 15px;
-    font-family: Copperplate, Papyrus, fantasy;
     font-size: 20px;
     text-align: center;
 }
@@ -166,15 +165,13 @@ footer{
 .imgPersona1 { 
     grid-area: imgPersona1;
     background-image: url(../imagenes/manicura.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-top: 50px;
     margin-left: 10px;
+    @include imgServicio
 }
 
 .textoPersona1 { 
     grid-area: textoPersona1; 
-    font-family: Copperplate, Papyrus, fantasy;
     font-size: 20px;
     text-align: center;
     align-self: center;
@@ -195,7 +192,6 @@ footer{
 
 .textoPersona2 { 
     grid-area: textoPersona2; 
-    font-family: Copperplate, Papyrus, fantasy;
     font-size: 20px;
     text-align: center;
     align-self: center;
@@ -207,33 +203,25 @@ footer{
     grid-area: imgPersona2;
     background-image: url(../imagenes/maquilladora.jpg);
     margin-bottom: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-right: 10px;
+    @include imgServicio
 }
 
 /*-------------------servicios----------------------*/
 
-.tituloMaquillaje{
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 40px;
-    text-align: center;
-    color: #FF7A87;
+.tituloManicuria{
+    @extend .titulo;
     margin-bottom: 20px;
-    padding-top: 40px;
+    padding-top: 100px;
 }
 
-.tituloManicuria{
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 40px;
-    text-align: center;
-    color: #FF7A87;
-    margin-bottom: 50px;
-    padding-top: 40px;
+.tituloMaquillaje{
+    @extend .titulo;
+    margin-bottom: 20px;
+    padding-top: 5px;
 }
 
 .descripcionServicios{
-    font-family: Copperplate, Papyrus, fantasy;
     font-size: 25px;
     text-align: center;
     color: #FFC568;
@@ -254,10 +242,7 @@ footer{
 }
 
 .tituloGaleria{
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 35px;
-    text-align: center;
-    color: #FF7A87;
+    @extend .titulo;
     margin: 100px 0px 10px 0px;
 }
 
@@ -279,8 +264,8 @@ footer{
     grid-column: 1/2;
     grid-row: 1/3;
     background-image: url(../imagenes/novia.jpg);
-    background-position: center;
     transition: transform .2s;
+    @include imgServicio
 }
 .item1:hover{
     transform: scale(1.5);
@@ -290,8 +275,8 @@ footer{
     grid-column: 2/3;
     grid-row: 1/2;
     background-image: url(../imagenes/gelificadas.jpg);
-    background-position: center;
     transition: transform .2s;
+    @include imgServicio
 }
 
 .item2:hover{
@@ -302,10 +287,8 @@ footer{
     grid-column: 3/5;
     grid-row: 1/2;
     background-image: url(../imagenes/uñascondibujo.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;    
-    background-position: center;
     transition: transform .2s;
+    @include imgServicio
 }
 
 .item3:hover{
@@ -316,8 +299,8 @@ footer{
     grid-column: 2/3;
     grid-row: 2/4;
     background-image: url(../imagenes/fiesta15.webp);
-    background-position: center;
     transition: transform .2s;
+    @include imgServicio
 }
 
 .item4:hover{
@@ -328,8 +311,8 @@ footer{
     grid-column: 3/4;
     grid-row: 2/3;
     background-image: url(../imagenes/uñascelestes.jpg);
-    background-position: center;
     transition: transform .2s;
+    @include imgServicio
 }
 
 .item5:hover{
@@ -340,10 +323,8 @@ footer{
     grid-column: 4/5;
     grid-row: 2/3;
     background-image: url(../imagenes/civil.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     transition: transform .2s;
+    @include imgServicio
 }
 
 .item6:hover{
@@ -354,8 +335,8 @@ footer{
     grid-column: 1/2;
     grid-row: 3/4;
     background-image: url(../imagenes/esculpidas.jpg);
-    background-position: center;    
     transition: transform .2s;
+    @include imgServicio
 }
 
 .item7:hover{
@@ -366,10 +347,8 @@ footer{
     grid-column: 3/5;
     grid-row: 3/4;
     background-image: url(../imagenes/maquillaje.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;   
     transition: transform .2s;
+    @include imgServicio
 }
 .item8:hover{
     transform: scale(1.5);
@@ -379,13 +358,12 @@ footer{
 
 .bodyReservaTuTurno{
     background-image: url(../imagenes/tulips-g369b58a20_1920.jpg);
-    @include imgServicio;
+    @include imgServicio
 }
 
 .formulario h2{
 margin-top: 100px;
-text-align: center;
-color: #F77AA4
+@extend .titulo;
 }
 
 form{
@@ -397,13 +375,9 @@ form{
 }
 
 .estamosUbicadosEn{
-    color: #F77AA4;
-    text-transform: capitalize;
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 35px;
-    text-align: center;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 30px;
+    @extend .titulo;
 }
 
 .mapaUbicacion{
