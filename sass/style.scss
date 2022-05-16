@@ -5,7 +5,6 @@
     font-family: Copperplate, Papyrus, fantasy;
 }
 
-/*----------------------------barra de navegacion--------------------------*/
 @mixin imgServicio {
     background-position: center;
     background-repeat: no-repeat;
@@ -17,6 +16,8 @@
     text-align: center;
     color: #FF7A87;
 }
+
+/*----------------------------barra de navegacion--------------------------*/
 
 .navbar{ 
     height: 80px;
@@ -36,14 +37,16 @@
 /*----------------------------pie de pagina--------------------------*/
 footer{
     text-align: center;
-    color: #F9F871;
-    background: #606CB5;
+    color: #B770B9;
+    background-image: url(../imagenes/symbol-scatter-haikei.svg);
     font-size: 25px;
     display: flex;
-    align-items: center;
     justify-content:space-evenly;
     padding-top: 20px;
     z-index: 2;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
 }
 
 .redessociales a{
