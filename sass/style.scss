@@ -1,392 +1,403 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Copperplate, Papyrus, fantasy;
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: Copperplate, Papyrus,fantasy;
 }
 
 @mixin imgServicio {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .titulo{
-    font-size: 45px;
-    text-align: center;
-    color: #FF7A87;
+font-size: 45px;
+text-align: center;
+color: #FF7A87;
 }
 
 /*----------------------------barra de navegacion--------------------------*/
 
-.navbar{ 
-    height: 80px;
-    background-color: #606CB5;
-    text-transform: capitalize;
-    font-size: 25px;
+.navbar{
+height:80px;
+background-color: #606CB5;
+text-transform: capitalize;
+font-size: 25px;
 }
 
 .navbar-brand{
-    font-size: 40px;
+font-size: 40px;
 }
 
 .navbar-nav{
-    background-color: #606CB5;
+background-color: #606CB5;
 }
 
 /*----------------------------pie de pagina--------------------------*/
 footer{
-    text-align: center;
-    color: #B770B9;
-    background-image: url(../imagenes/symbol-scatter-haikei.svg);
-    font-size: 25px;
-    display: flex;
-    justify-content:space-evenly;
-    padding-top: 20px;
-    z-index: 2;
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
+text-align: center;
+color: white;
+background-color: #606CB5;
+font-size: 25px;
+display:flex;
+justify-content: space-evenly;
+padding-top: 20px;
+z-index: 2;
+@include imgServicio;
 }
 
 .redessociales a{
-    text-decoration: none;
-    color: #F77AA4;
-    align-items: right;
+text-decoration: none;
+color: white;
+align-items: right;
 }
 /* ------------------------------------------------------------ */
 /*---------------------index boton whatsapp---------------------*/
 
 .whatsapp{
-    font-size: 60px;
-    position: fixed;
-    bottom:25px;
-    right: 50px;
-    z-index: 2;
+font-size: 70px;
+position:fixed;
+bottom:5px;
+right: 90px;
+z-index: 2;
 }
 
 .whatsapp a{
-    color: #F77AA4;
-    text-decoration: none;
+color: #F77AA4;
+text-decoration: none;
 }
 
 /* --------------------------------------------- */
 
 /* --------------------index-------------------- */
 .portada{
-    height: 100vh;
-    width: 100%;
-    background-image: url(../imagenes/portada.jpg);
-    @include imgServicio
+height: 100vh;
+width: 100%;
+background-image: url(../imagenes/portada.jpg);
+@include imgServicio
 }
 
 .contenedor1{
-    height: 320px;
-    width: 100%;
-    display: grid;
-    padding: 20px;
-    gap: 20px;
+height: 320px;
+width: 100%;
+display: grid;
+padding: 20px;
+gap: 20px;
 }
 
 .contenedor1 p{
-    text-align: center;
-    margin-top: 150px;
-    color: red;
-    font-size: 40px;
+text-align: center;
+margin-top: 150px;
+color: red;
+font-size: 40px;
 }
 
 .imgServicio1{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    height: 300px;
-    background-image: url(../imagenes/gelificadas.jpg);
-    @include imgServicio
+grid-column: 1/2;
+grid-row: 1/2;
+height: 300px;
+background-image: url(../imagenes/gelificadas.jpg);
+@include imgServicio
 }
 
 .imgServicio2{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    height: 300px;
-    background-image: url(../imagenes/civil.jpeg);
-    @include imgServicio
-} 
+grid-column: 2/3;
+grid-row: 1/2;
+height: 300px;
+background-image: url(../imagenes/civil.jpeg);
+@include imgServicio
+}
 
 .imgServicio3{
-    grid-column: 3/4;
-    grid-row: 1/2;
-    height: 300px;
-    background-image: url(../imagenes/uñascelestes.jpg);
-    @include imgServicio
-} 
+grid-column: 3/4;
+grid-row: 1/2;
+height: 300px;
+background-image: url(../imagenes/uñascelestes.jpg);
+@include imgServicio
+}
 
 .contenedorMisTrabajos{
-    margin-top: 40px;
-    text-align: center;
+margin-top: 40px;
+text-align: center;
 }
 
 .misTrabajos{
-    margin-bottom: 40px;
-    @extend .titulo;
+margin-bottom: 40px;
+@extend.titulo;
 }
+
+.mapaUbicacion1{
+    height: 400px;
+    width: 80%;
+    margin: 0 auto 20px auto;
+    display: block;
+    }
 /*-------------------quienes somos----------------------*/
 
 .historia h2{
-    @extend .titulo;
-    margin-bottom: 20px;
-    padding-top: 100px;
+@extend.titulo;
+margin-bottom: 20px;
+padding-top: 100px;
 }
 
-.historia p{ 
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
+.historia p{
+padding: 15px;
+font-size: 20px;
+text-align: center;
 }
 
-.containerStaff {  
-    height: 900px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 60px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "persona1"
-        "persona2";
-    }
-
-.persona1 {  
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "imgPersona1 textoPersona1";
-    grid-area: persona1;
+.containerStaff { 
+height: 900px;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 60px 0px;
+grid-auto-flow: row;
+grid-template-areas:
+"persona1"
+"persona2";
 }
 
-.imgPersona1 { 
-    grid-area: imgPersona1;
-    background-image: url(../imagenes/manicura.jpg);
-    margin-top: 50px;
-    margin-left: 10px;
-    @include imgServicio
+.persona1 { 
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-template-areas:
+"imgPersona1 textoPersona1";
+grid-area: persona1;
 }
 
-.textoPersona1 { 
-    grid-area: textoPersona1; 
-    font-size: 20px;
-    text-align: center;
-    align-self: center;
-    color: #B770B9;
-    margin-right: 20px;
+.imgPersona1 {
+grid-area: imgPersona1;
+background-image: url(../imagenes/manicura.jpg);
+margin-top: 50px;
+margin-left: 10px;
+@include imgServicio
 }
 
-.persona2 {  
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: 
-        "textoPersona2 imgPersona2";
-    grid-area: persona2;
+.textoPersona1 {
+grid-area: textoPersona1;
+font-size: 20px;
+text-align: center;
+align-self: center;
+color: #B770B9;
+margin-right: 20px;
 }
 
-.textoPersona2 { 
-    grid-area: textoPersona2; 
-    font-size: 20px;
-    text-align: center;
-    align-self: center;
-    color: #B770B9;
-    margin-right: 20px;
+.persona2 { 
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-template-areas:
+"textoPersona2 imgPersona2";
+grid-area: persona2;
 }
 
-.imgPersona2 { 
-    grid-area: imgPersona2;
-    background-image: url(../imagenes/maquilladora.jpg);
-    margin-bottom: 20px;
-    margin-right: 10px;
-    @include imgServicio
+.textoPersona2 {
+grid-area: textoPersona2;
+font-size: 20px;
+text-align: center;
+align-self: center;
+color: #B770B9;
+margin-right: 20px;
+}
+
+.imgPersona2 {
+grid-area: imgPersona2;
+background-image: url(../imagenes/maquilladora.jpg);
+margin-bottom: 20px;
+margin-right: 10px;
+@include imgServicio
 }
 
 /*-------------------servicios----------------------*/
 
 .tituloManicuria{
-    @extend .titulo;
-    margin-bottom: 20px;
-    padding-top: 100px;
+@extend.titulo;
+margin-bottom: 20px;
+padding-top: 100px;
 }
 
 .tituloMaquillaje{
-    @extend .titulo;
-    margin-bottom: 20px;
-    padding-top: 5px;
+@extend.titulo;
+margin-bottom: 20px;
+padding-top: 5px;
 }
 
 .descripcionServicios{
-    font-size: 25px;
-    text-align: center;
-    color: #FFC568;
-    margin-bottom: 50px;
-    padding-top: 100px;
+font-size: 25px;
+text-align: center;
+align-items: center;
+color: #FFC568;
+margin-bottom: 50px;
+padding-top: 100px;
 }
 
 .imgServicio{
-    text-align: center;
-    padding-bottom: 30px;
-    object-fit: cover;
+text-align: center;
+padding-bottom: 30px;
+object-fit: cover;
+}
+
+@media only screen and (min-width: 767px) {
+.descripcionServicios {
+    padding-left: 50px;
+    }
 }
 
 /*-------------------galeria----------------------*/
 
 .galeriaGral{
-    background-image: linear-gradient(to bottom,#606CB5, #B770B9, #F77AA4);
+background-image: linear-gradient(to bottom,#606CB5, #B770B9, #F77AA4);
 }
 
 .tituloGaleria{
-    @extend .titulo;
-    margin: 100px 0px 10px 0px;
+@extend.titulo;
+margin: 100px 0px 10px 0px;
 }
 
 .contenedor{
-    height: 800px;
-    width: 100%;
-    display: grid;
-    padding: 20px;
-    gap: 20px;
+height: 800px;
+width: 100%;
+display: grid;
+padding: 20px;
+gap: 20px;
 }
 
 .item{
-    border: 2px solid black;
-    border-radius: 7px;
-    box-shadow: 0 0 5px #333;
+border: 2px solid black;
+border-radius: 7px;
+box-shadow: 0 0 5px #333;
 }
 
 .item1{
-    grid-column: 1/2;
-    grid-row: 1/3;
-    background-image: url(../imagenes/novia.jpg);
-    transition: transform .2s;
-    @include imgServicio
+grid-column: 1/2;
+grid-row: 1/3;
+background-image: url(../imagenes/novia.jpg);
+transition: transform.2s;
+@include imgServicio
 }
 .item1:hover{
-    transform: scale(1.5);
+transform: scale(1.5);
 }
 
 .item2{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    background-image: url(../imagenes/gelificadas.jpg);
-    transition: transform .2s;
-    @include imgServicio
+grid-column: 2/3;
+grid-row: 1/2;
+background-image: url(../imagenes/gelificadas.jpg);
+transition: transform.2s;
+@include imgServicio
 }
 
 .item2:hover{
-    transform: scale(1.5);
+transform: scale(1.5);
 }
 
 .item3{
-    grid-column: 3/5;
-    grid-row: 1/2;
-    background-image: url(../imagenes/uñascondibujo.jpg);
-    transition: transform .2s;
-    @include imgServicio
+grid-column: 3/5;
+grid-row: 1/2;
+background-image: url(../imagenes/uñascondibujo.jpg);
+transition: transform.2s;
+@include imgServicio
 }
 
 .item3:hover{
-    transform: scale(1.5);
+transform: scale(1.5);
 }
 
 .item4{
-    grid-column: 2/3;
-    grid-row: 2/4;
-    background-image: url(../imagenes/fiesta15.webp);
-    transition: transform .2s;
-    @include imgServicio
+grid-column: 2/3;
+grid-row: 2/4;
+background-image: url(../imagenes/fiesta15.webp);
+transition: transform.2s;
+@include imgServicio
 }
 
 .item4:hover{
-    transform: scale(1.5);
+transform: scale(1.5);
 }
 
 .item5{
-    grid-column: 3/4;
-    grid-row: 2/3;
-    background-image: url(../imagenes/uñascelestes.jpg);
-    transition: transform .2s;
-    @include imgServicio
+grid-column: 3/4;
+grid-row: 2/3;
+background-image: url(../imagenes/uñascelestes.jpg);
+transition: transform.2s;
+@include imgServicio
 }
 
 .item5:hover{
-    transform: scale(1.5);
+transform: scale(1.5);
 }
 
 .item6{
-    grid-column: 4/5;
-    grid-row: 2/3;
-    background-image: url(../imagenes/civil.jpeg);
-    transition: transform .2s;
-    @include imgServicio
+grid-column: 4/5;
+grid-row: 2/3;
+background-image: url(../imagenes/civil.jpeg);
+transition: transform.2s;
+@include imgServicio
 }
 
 .item6:hover{
-    transform: scale(1.5);
+transform: scale(1.5);
 }
 
 .item7{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background-image: url(../imagenes/esculpidas.jpg);
-    transition: transform .2s;
-    @include imgServicio
+grid-column: 1/2;
+grid-row: 3/4;
+background-image: url(../imagenes/esculpidas.jpg);
+transition: transform.2s;
+@include imgServicio
 }
 
 .item7:hover{
-    transform: scale(1.5);
+transform: scale(1.5);
 }
 
 .item8{
-    grid-column: 3/5;
-    grid-row: 3/4;
-    background-image: url(../imagenes/maquillaje.jpg);
-    transition: transform .2s;
-    @include imgServicio
+grid-column: 3/5;
+grid-row: 3/4;
+background-image: url(../imagenes/maquillaje.jpg);
+transition: transform.2s;
+@include imgServicio
 }
 .item8:hover{
-    transform: scale(1.5);
+transform: scale(1.5);
 }
 
 /*------------------reservas tu turno---------------------*/
 
 .bodyReservaTuTurno{
-    background-image: url(../imagenes/tulips-g369b58a20_1920.jpg);
-    @include imgServicio
+background-image: url(../imagenes/tulips-g369b58a20_1920.jpg);
+@include imgServicio
 }
 
 .formulario h2{
 margin-top: 100px;
-@extend .titulo;
+@extend.titulo;
 }
 
 form{
-    width: 50%;
-    margin: 0px auto 40px;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 30px;
+width: 50%;
+margin: 0px auto 40px;
+text-align: center;
+text-transform: capitalize;
+font-size: 30px;
 }
 
 .estamosUbicadosEn{
-    margin-top: 40px;
-    margin-bottom: 30px;
-    @extend .titulo;
+margin-top: 40px;
+margin-bottom: 30px;
+@extend.titulo;
 }
 
-.mapaUbicacion{
-    height: 400px;
-    width: 80%;
-    margin: 0 auto 20px auto;
-    display: block;
+.mapaUbicacion2{
+height: 400px;
+width: 80%;
+margin: 0 auto 20px auto;
+display: block;
 }
-
