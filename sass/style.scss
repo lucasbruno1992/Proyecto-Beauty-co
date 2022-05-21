@@ -43,7 +43,6 @@ font-size: 25px;
 display:flex;
 justify-content: space-evenly;
 padding-top: 20px;
-z-index: 2;
 @include imgServicio;
 }
 
@@ -57,10 +56,10 @@ align-items: right;
 
 .whatsapp{
 font-size: 70px;
-position:fixed;
-bottom:5px;
+position: fixed;
+bottom: 5px;
 right: 90px;
-z-index: 2;
+z-index: 3;
 }
 
 .whatsapp a{
