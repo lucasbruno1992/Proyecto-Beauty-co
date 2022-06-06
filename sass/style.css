@@ -95,6 +95,7 @@ footer {
 .imgServicio {
   z-index: 1;
   padding-top: 120px;
+  text-align: center;
 }
 
 .imgServicio1 {
@@ -268,6 +269,10 @@ footer {
 .tituloMaquillaje {
   margin-bottom: 20px;
   padding-top: 5px;
+}
+
+.descripcion {
+  margin-top: 180px;
 }
 
 /*-------------------galeria----------------------*/
