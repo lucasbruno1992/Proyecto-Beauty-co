@@ -31,8 +31,8 @@ font-size: 40px;
 }
 
 .row *{
-    padding-left: 0;
-    padding-right: 0;
+padding-left: 0;
+padding-right: 0;
 }
 
 /*----------------------------pie de pagina--------------------------*/
@@ -71,7 +71,7 @@ text-decoration: none;
 /* --------------------index-------------------- */
 
 #portada{
-    height: auto;
+height: auto;
 }
 
 .contenedor1{
@@ -218,7 +218,6 @@ margin-right: 10px;
 
 .tituloManicuria{
 @extend.titulo;
-margin-bottom: 20px;
 padding-top: 130px;
 }
 
@@ -228,8 +227,17 @@ margin-bottom: 20px;
 padding-top: 5px;
 }
 
-.descripcion{
-    margin-top: 180px
+#portada1{
+    margin-top: 100px;;
+}
+
+#portada1b{
+    padding-bottom: 10px;
+}
+
+.imgServicioPage{
+    padding-top:10px;
+    padding-bottom: 10px;
 }
 
 /*-------------------galeria----------------------*/

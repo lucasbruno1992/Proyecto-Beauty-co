@@ -262,7 +262,6 @@ footer {
 
 /*-------------------servicios----------------------*/
 .tituloManicuria {
-  margin-bottom: 20px;
   padding-top: 130px;
 }
 
@@ -271,8 +270,17 @@ footer {
   padding-top: 5px;
 }
 
-.descripcion {
-  margin-top: 180px;
+#portada1 {
+  margin-top: 100px;
+}
+
+#portada1b {
+  padding-bottom: 10px;
+}
+
+.imgServicioPage {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*-------------------galeria----------------------*/
